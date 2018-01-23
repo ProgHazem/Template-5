@@ -1,0 +1,266 @@
+/*Start Main Rules*/
+body{
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box
+}
+p, span {
+  font-family: 'Raleway', 'sans-serif';
+}
+/*Start Container*/
+.container{width: 1170px;margin: auto}
+/*End Container*/
+.clearfix{clear: both}
+/*End Main Rules*/
+
+/*Start My Framwork*/
+
+/*End My Framwork*/
+
+/*Start Header*/
+header {
+  height: 700px;
+  position: relative;
+  background-image: url('../images/header-bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header .head-top {height: 50px;overflow: hidden;padding-top: 15px}
+header .head-top img {float: left}
+header .head-top nav {float: right}
+header .head-top nav ul {list-style: none}
+header .head-top nav ul li {display: inline-block}
+header .head-top nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 25px;
+  line-height: 25px;
+  padding-left: 10px
+}
+header .head-bottom {
+  position: absolute;
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+header .head-bottom h1 {color: #FFF;font-size: 50px;font-weight: bold}
+header .head-bottom p {
+  color: #FFF;
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+header .head-bottom button {
+  width: 200px;
+  height: 60px;
+  margin: 19px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+header .head-bottom button:first-child {background-color: #FFF}
+header .head-bottom button:last-child {background-color: #8BE2E5;color: #FFF}
+header .head-bottom button:last-child:hover {background-color: #4a8c8e}
+header .head-foot {
+  width: 25px;
+  height: 50px;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+}
+header .head-foot .scroll {
+  width: 5px;
+  height: 10px;
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 50px;
+  margin: auto;
+  position: relative;
+  top: 5px;
+  -webkit-animation: moving 1s ease-in-out infinite;
+  -moz-animation: moving 1s ease-in-out infinite;
+  -o-animation: moving 1s ease-in-out infinite;
+  animation: moving 1s ease-in-out infinite;
+}
+@keyframes moving {
+  0% {top: 5px;opacity: 0}
+  25% {top: 10px;opacity: 1}
+  50% {top: 20px;opacity: 0}
+  75% {top: 35px;opacity: 1}
+  100% {top: 45px;opacity: 0}
+}
+/*End Header*/
+
+/*Start section Be First*/
+section.be-first {
+  height: 550px;
+  padding-top: 10%;
+  margin-bottom: 15%;
+  text-align: center;
+  background-image: url('../images/be-the-first-bg.jpg');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.be-first .be-first-center {margin-top: 0;color: #FFF}
+section.be-first .be-first-center h2 {font-size: 40px;font-weight: bold;margin-bottom: 0}
+section.be-first .be-first-center p {margin-top: 5px;margin-bottom: 5%;font-size: 22px}
+section.be-first .be-first-center img {width: 400px}
+/*End section Be First*/
+/*Start section Feature*/
+section.features {padding-bottom: 10%;overflow: hidden}
+section.features .first-feat {width: 30%;float: left;margin-right: 5%}
+section.features .first-feat:last-child {margin-right: 0}
+section.features .first-feat:nth-of-type(1) hr {height: 5px;border: 0;background-color: #6D3F96}
+section.features .first-feat h2 {font-size: 20px;font-weight: bold}
+section.features .first-feat p {color: #929496;line-height: 1.5}
+section.features .first-feat:nth-of-type(2) hr{height: 5px;border: 0;background-color: #FDC05D;}
+section.features .first-feat:nth-of-type(3) hr {height: 5px;border: 0;background-color: #70CBCE;}
+/*End section Feature*/
+
+/*Start  Section Pricing*/
+section.pricing {
+  padding-top: 8%;
+  padding-bottom: 10%;
+  background-color: #70CBCE;
+  text-align: center;
+}
+section.pricing h2 {color: #FFF;font-size: 40px;font-weight: bold}
+section.pricing p {font-size: 20px;color: #FFF;margin-bottom: 40px;}
+section.pricing .pricing-flex {display: flex;justify-content: center}
+section.pricing .pricing-flex .first-item {width: 32%}
+section.pricing .pricing-flex .first-item:nth-of-type(1),
+section.pricing .pricing-flex .first-item:nth-of-type(3) {margin-top: 2%}
+section.pricing .pricing-flex .first-item ul {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  list-style: none;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+section.pricing .pricing-flex .first-item ul:hover {margin-top: -10px}
+section.pricing .pricing-flex .first-item ul:hover li.price {background-color: #333}
+section.pricing .pricing-flex .first-item ul li.head-flex {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #231F20;
+  color: #FFF;
+  padding: 20px;
+}
+section.pricing .pricing-flex .first-item ul li.price {
+  background-color: #231F20;
+  color: #FFF;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+section.pricing .pricing-flex .first-item ul li.price small {color: #9294969;font-weight: normal}
+section.pricing .pricing-flex .first-item ul li.list {
+  padding: 20px;
+  border-bottom: 1px dotted #E8EAEA;
+  font-weight: bold;
+}
+section.pricing .pricing-flex .first-item ul li.content{
+  color: #929496;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: normal;
+}
+section.pricing .pricing-flex .first-item ul li.btn-subscribe {
+  padding: 15px;
+  color: #70CBCE;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: none;
+}
+section.pricing .pricing-flex .first-item ul li.btn-subscribe:hover {background-color: #DDD}
+/*End  Section Pricing*/
+
+/* Start Section Invite */
+section.invite {padding-top: 10%;padding-bottom: 10%;background-color: #F5F5F5;text-align: center}
+section.invite i {color: #70CBCE;padding: 10px;border: 2px solid #70CBCE;border-radius: 50%}
+section.invite h2 {font-size: 40px}
+section.invite p {color: #929496;margin-bottom: 2%}
+section.invite input {
+  display: block;
+  width: 400px;
+  margin: auto;
+  height: 50px;
+  padding-left: 10px;
+  line-height: 50px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+section.invite input::-webkit-input-placeholder {color: #AAA}
+section.invite input::-moz-input-placeholder {color: #AAA}
+section.invite input::-o-input-placeholder {color: #AAA}
+section.invite input::input-placeholder {color: #AAA}
+section.invite button {
+  margin: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  width: 170px;
+  background-color: #70CBCE;
+  height: 50px;
+  border-radius: 15px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+/* End Section Invite */
+/* Start Section Info */
+section.info {padding-top: 10%;padding-bottom: 5%}
+section.info .info-part {overflow: hidden;width: 70%;margin: auto}
+section.info .info-part img {float: left;width: 20%}
+section.info .info-part p {float: left;width: 80%;line-height: 1.7;color: #929496}
+section.info .info-part p span {display: block;font-weight: bold}
+section.info hr {margin-top: 20px;margin-bottom: 20px;background-color: #E8EAEA;border: 0;height: 2px;}
+/* End Section Info */
+/*Start Footer*/
+footer {
+  height: 70px;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .footer-left {float: left}
+footer .footer-left span {font-size: 16px;font-weight: bold}
+footer .footer-right {float: right}
+footer .footer-right p {font-size: 16px;color: #929496;margin-top: 0}
+footer .footer-right p span {color: #70CBCE;font-size: 20px;font-weight: bold}
+/*End Footer*/
